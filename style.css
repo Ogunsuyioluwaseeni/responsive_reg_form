@@ -1,140 +1,142 @@
-         * {
-             margin: 0;
-             padding: 0;
-             font-family: 'Poppins', sans-serif;
-         }
-         
-         body {
-             background-image: url(./images/bg-intro-desktop.png);
-             background-repeat: no-repeat;
-             background-size: cover;
-             background-color: rgb(255, 133, 109);
-             font-size: 16px;
-             margin: auto;
-         }
-         
-         .container {
-             height: 100vh;
-             max-width: 1200px;
-             margin: 0 10px;
-             display: flex;
-             align-items: center;
-         }
-         
-         .signup {
-             display: flex;
-             padding: 0 53px;
-         }
-         
-         .signup-left {
-             width: 50%;
-             display: flex;
-             flex-direction: column;
-             padding: 20px;
-             margin-top: 117px;
-         }
-         
-         .signup-left h1 {
-             color: white;
-             font-size: 3rem;
-             line-height: 1.3;
-         }
-         
-         .signup-left p {
-             color: white;
-             font-size: 1.1rem;
-             margin-top: 25px;
-         }
-         
-         .signup-right {
-             width: 50%;
-         }
-         
-         .form-wrapper {
-             max-width: 433px;
-             display: flex;
-             flex-direction: column;
-             justify-content: center;
-         }
-         
-         .text-box {
-             padding: 20px;
-             margin: 20px 0;
-             color: white;
-             background-color: white;
-             border-radius: 5px;
-             text-align: center;
-             font-size: 1.1rem;
-         }
-         
-         .text-box-purple {
-             background-color: hsl(240, 46%, 55%);
-         }
-         
-         form {
-             display: flex;
-             flex-direction: column;
-             padding: 25px;
-             background-color: white;
-             border-radius: 5px;
-             text-align: center;
-             box-shadow: 0 2px hsl(246, 25%, 77%);
-         }
-         
-         input:not(:first-child) {
-             margin-top: 24px;
-         }
-         
-         input {
-             padding: 20px;
-             border: 1px solid grey;
-             border-radius: 5px;
-         }
-         
-         #button-green {
-             border: none;
-             font-size: 1rem;
-             letter-spacing: 1px;
-             font-weight: 600;
-             background-color: hsl(154, 59%, 51%);
-             color: white;
-             margin-bottom: 10px;
-             padding: 19px;
-             box-shadow: 0 4px hsl(154, saturation, lightness);
-         }
-         
-         #button-green:hover {
-             cursor: pointer;
-         }
-         
-         .text-small {
-             font-size: 0.8rem;
-         }
-         
-         .light-text {
-             opacity: 0.4;
-         }
-         
-         .text-red {
-             color: hsl(0, 100%, 74%);
-         }
-         /* responsiveness */
-         
-         @media only screen and (max-width:768px) {
-             .signup {
-                 flex-direction: column;
-                 text-align: center;
-             }
-         }
-         
-         @media only screen and (max-width:768px) {
-             .signup-left {
-                 width: 100%;
-             }
-         }
-         
-         @media only screen and (max-width:768px) {
-             .signup-right {
-                 width: 100%;
-             }
-         }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(./images/bg-intro-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(0, 100%, 74%);
+    font-size: 16px;
+}
+
+.container {
+    height: 100vh;
+    max-width: 1200px;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    position: absolute;
+}
+
+.signup-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.signup-left h1 {
+    color: white;
+    font-size: 2rem;
+    line-height: 1.3;
+}
+
+.signup-left p {
+    color: white;
+    font-size: 1.1rem;
+    margin-top: 25px;
+}
+
+.signup-right {
+    width: 50%;
+}
+
+.form-wrapper {
+    max-width: 433px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-box {
+    padding: 20px;
+    margin: 20px 0;
+    color: white;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.text-box-blue {
+    background-color: hsl(240, 46%, 55%);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px hsl(246, 25%, 77%);
+}
+
+input:not(:first-child) {
+    margin-top: 24px;
+}
+
+input {
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+#button-green {
+    border: none;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    margin-bottom: 10px;
+    padding: 19px;
+    box-shadow: 0 4px hsl(154, saturation, lightness);
+}
+
+#button-green:hover {
+    cursor: pointer;
+}
+
+.text-small {
+    font-size: 0.8rem;
+}
+
+.light-text {
+    opacity: 0.4;
+}
+
+.text-red {
+    color: hsl(0, 100%, 74%);
+}
+
+
+/* responsiveness */
+
+@media only screen and (max-width:375px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .signup-left {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .signup-right {
+        width: 100%;
+        flex-direction: column;
+    }
+}
